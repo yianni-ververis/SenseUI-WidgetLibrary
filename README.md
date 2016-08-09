@@ -1,7 +1,7 @@
 # SenseUI-WidgetLibrary
 A Library created by the Demo Team for some simple widgets
 
-### KPI ###:
+### KPI
 - 
 
 ---

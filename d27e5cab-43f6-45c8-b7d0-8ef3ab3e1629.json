@@ -1,0 +1,117 @@
+{
+  "name": "Navigation Button",
+  "description": "Simple Action Button with icons and color themes",
+  "author": "",
+  "library": "senseui-widgetlibrary",
+  "meta": {
+    "type": "navigation"
+  },
+  "properties": {
+    "sections": [
+      {
+        "type": "header",
+        "order": 0,
+        "parent": "qw-pe-dropzone0-0",
+        "ref": "header1",
+        "label": "Action Button"
+      }
+    ],
+    "settings": [
+      {
+        "component": "textarea",
+        "defaultValue": "Action",
+        "rows": 1,
+        "maxlength": 50,
+        "order": 0,
+        "parent": "header1",
+        "ref": "text",
+        "label": "Button Text",
+        "type": "string"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "",
+        "options": [
+          {
+            "label": "Next sheet",
+            "value": "nextSheet"
+          },
+          {
+            "label": "Previous sheet",
+            "value": "prevSheet"
+          }
+        ],
+        "order": 1,
+        "parent": "header1",
+        "ref": "action",
+        "label": "Action"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "",
+        "options": [
+          {
+            "label": "left",
+            "value": "left"
+          },
+          {
+            "label": "right",
+            "value": "right"
+          }
+        ],
+        "order": 3,
+        "parent": "header1",
+        "ref": "iconposition",
+        "label": "Icon Position"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "",
+        "options": [
+          {
+            "label": "default",
+            "value": "default"
+          },
+          {
+            "label": "success",
+            "value": "success"
+          },
+          {
+            "label": "warning",
+            "value": "warning"
+          },
+          {
+            "label": "error",
+            "value": "error"
+          }
+        ],
+        "order": 4,
+        "parent": "header1",
+        "ref": "variant",
+        "label": "Theme"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "",
+        "options": [
+          {
+            "label": "back",
+            "value": "back"
+          },
+          {
+            "label": "forward",
+            "value": "forward"
+          }
+        ],
+        "order": 2,
+        "parent": "header1",
+        "ref": "icon",
+        "label": "Icon"
+      }
+    ]
+  }
+}
