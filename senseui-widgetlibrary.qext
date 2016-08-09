@@ -3,10 +3,8 @@
   "description": "Widget Library created by the Demo Team",
   "type": "widget-library",
   "widgets": [
-    "d27e5cab-43f6-45c8-b7d0-8ef3ab3e1629",
     "287d8b68-72f5-41c4-889a-b9ea7c05001b",
-    "Drill-KPI",
-    "df537788-ba66-4699-900c-7df7acafa53c",
-    "7fc3be3e-b38d-4e49-b386-ae499becc626"
+    "d27e5cab-43f6-45c8-b7d0-8ef3ab3e1629",
+    "KPI"
   ]
 }

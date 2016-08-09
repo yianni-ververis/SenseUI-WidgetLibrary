@@ -1,0 +1,228 @@
+sheet
+object
+image
+clear-selections
+selections-tool 
+bookmark
+back
+forward
+history
+help
+info
+toggle-left
+toggle-right
+selections-reload
+text
+group
+search
+zoom-in
+zoom-out
+selections-back
+selections-forward
+export
+lock
+unlock
+database
+calendar
+field
+expression
+library
+debug
+script-ok
+grid-large
+star
+print
+remove
+handle
+handle-horizontal
+menu
+list
+unordered-list
+bar-chart
+bar-chart-horizontal
+clock
+line-chart
+pie-chart
+gauge-chart
+kpi
+scatter-chart
+map
+puzzle
+table
+pivot-table
+filterpane
+treemap
+combo-chart
+plus
+minus
+triangle-top
+triangle-bottom
+triangle-left
+triangle-right
+run-script
+tick
+cogwheel
+settings
+data-model
+script
+sense
+cut
+copy
+paste
+align-left
+align-center
+align-right
+bold
+italic
+underline
+select-alternative
+select-possible
+select-excluded
+select-all
+camera
+slide-show
+palette
+shapes
+effects
+file
+expand
+<span class="lui-icon lui-icon--expand"></span>
+ 
+collapse
+<span class="lui-icon lui-icon--collapse"></span>
+ 
+bin
+<span class="lui-icon lui-icon--bin"></span>
+link
+<span class="lui-icon lui-icon--link"></span>
+ 
+pivot
+<span class="lui-icon lui-icon--pivot"></span>
+ 
+reload
+<span class="lui-icon lui-icon--reload"></span>
+add
+<span class="lui-icon lui-icon--add"></span>
+ 
+edit
+<span class="lui-icon lui-icon--edit"></span>
+ 
+lasso
+<span class="lui-icon lui-icon--lasso"></span>
+key
+<span class="lui-icon lui-icon--key"></span>
+ 
+box
+<span class="lui-icon lui-icon--box"></span>
+ 
+home
+<span class="lui-icon lui-icon--home"></span>
+person
+<span class="lui-icon lui-icon--person"></span>
+ 
+stream
+<span class="lui-icon lui-icon--stream"></span>
+ 
+next
+<span class="lui-icon lui-icon--next"></span>
+grid
+<span class="lui-icon lui-icon--grid"></span>
+ 
+cloud
+<span class="lui-icon lui-icon--cloud"></span>
+ 
+more
+<span class="lui-icon lui-icon--more"></span>
+import
+<span class="lui-icon lui-icon--import"></span>
+ 
+folder
+<span class="lui-icon lui-icon--folder"></span>
+ 
+auto-layout
+<span class="lui-icon lui-icon--auto-layout"></span>
+toggle-bottom
+<span class="lui-icon lui-icon--toggle-bottom"></span>
+ 
+drop
+<span class="lui-icon lui-icon--drop"></span>
+ 
+play
+<span class="lui-icon lui-icon--play"></span>
+tag
+<span class="lui-icon lui-icon--tag"></span>
+ 
+close
+<span class="lui-icon lui-icon--close"></span>
+ 
+direct-discovery
+<span class="lui-icon lui-icon--direct-discovery"></span>
+warning
+<span class="lui-icon lui-icon--warning"></span>
+ 
+warning-triangle
+<span class="lui-icon lui-icon--warning-triangle"></span>
+ 
+share
+<span class="lui-icon lui-icon--share"></span>
+top
+<span class="lui-icon lui-icon--top"></span>
+ 
+low-resolution
+<span class="lui-icon lui-icon--low-resolution"></span>
+ 
+high-resolution
+<span class="lui-icon lui-icon--high-resolution"></span>
+view
+<span class="lui-icon lui-icon--view"></span>
+ 
+control
+<span class="lui-icon lui-icon--control"></span>
+ 
+code
+<span class="lui-icon lui-icon--code"></span>
+upload
+<span class="lui-icon lui-icon--upload"></span>
+ 
+repair
+<span class="lui-icon lui-icon--repair"></span>
+ 
+split
+<span class="lui-icon lui-icon--split"></span>
+up-down
+<span class="lui-icon lui-icon--up-down"></span>
+ 
+disconnect
+<span class="lui-icon lui-icon--disconnect"></span>
+ 
+photo-library
+<span class="lui-icon lui-icon--photo-library"></span>
+import
+<span class="lui-icon lui-icon--import"></span>
+ 
+application
+<span class="lui-icon lui-icon--application"></span>
+ 
+new-tab
+<span class="lui-icon lui-icon--new-tab"></span>
+ascending
+<span class="lui-icon lui-icon--ascending"></span>
+ 
+descending
+<span class="lui-icon lui-icon--descending"></span>
+ 
+arrow-up
+<span class="lui-icon lui-icon--arrow-up"></span>
+arrow-down
+<span class="lui-icon lui-icon--arrow-down"></span>
+ 
+arrow-right
+<span class="lui-icon lui-icon--arrow-right"></span>
+ 
+arrow-left
+<span class="lui-icon lui-icon--arrow-left"></span>
+sync
+<span class="lui-icon lui-icon--sync"></span>
+ 
+draggable
+<span class="lui-icon lui-icon--draggable"></span>

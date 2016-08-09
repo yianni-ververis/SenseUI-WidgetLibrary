@@ -61,7 +61,7 @@
             "value": "right"
           }
         ],
-        "order": 3,
+        "order": 4,
         "parent": "header1",
         "ref": "iconposition",
         "label": "Icon Position"
@@ -72,23 +72,35 @@
         "defaultValue": "",
         "options": [
           {
-            "label": "default",
+            "label": "White",
             "value": "default"
           },
           {
-            "label": "success",
+            "label": "Green",
             "value": "success"
           },
           {
-            "label": "warning",
+            "label": "Orange",
             "value": "warning"
           },
           {
-            "label": "error",
+            "label": "Red",
             "value": "error"
+          },
+          {
+            "label": "Blue",
+            "value": "blue"
+          },
+          {
+            "label": "Purple",
+            "value": "purple"
+          },
+          {
+            "label": "Brown",
+            "value": "brown"
           }
         ],
-        "order": 4,
+        "order": 5,
         "parent": "header1",
         "ref": "variant",
         "label": "Theme"
@@ -107,10 +119,19 @@
             "value": "forward"
           }
         ],
-        "order": 2,
+        "order": 3,
         "parent": "header1",
         "ref": "icon",
         "label": "Icon"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "",
+        "order": 2,
+        "parent": "header1",
+        "ref": "sheetId",
+        "label": "Sheet ID"
       }
     ]
   }

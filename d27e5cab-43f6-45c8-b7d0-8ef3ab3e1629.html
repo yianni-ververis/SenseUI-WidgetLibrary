@@ -1,6 +1,39 @@
-<style></style>
+<style>.lui-button--blue {
+	background-color: #1c5aa6;
+	color: #FFFFFF;
+    border: 0;
+    padding: 1px 17px;
+    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+}
+.lui-button--purple {
+	background-color: #9150cf;
+	color: #FFFFFF;
+    border: 0;
+    padding: 1px 17px;
+    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+}
+.lui-button--brown {
+	background-color: #8b5036;
+	color: #FFFFFF;
+    border: 0;
+    padding: 1px 17px;
+    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+}
+.lui-button--blue:hover, 
+.lui-button--blue.lui-hovered,
+.lui-button--purple:hover, 
+.lui-button--purple.lui-hovered,
+.lui-button--brown:hover, 
+.lui-button--brown.lui-hovered {
+    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1), inset 0 0 0 250px rgba(255, 255, 255, 0.2);
+}</style>
 <div><div>
-	<lui-button ng-click="navigation[settings.action]()" x-variant="{{settings.variant}}" class="btn-success">
+	<lui-button ng-click="navigation[settings.action]()" x-variant="{{settings.variant}}" ng-if="!settings.sheetId">
+		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}" ng-if="settings.iconposition==='left'"></span>
+		{{settings.text}}
+		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}" ng-if="settings.iconposition==='right'"></span>
+	</lui-button>
+	<lui-button ng-click="navigation.gotoSheet(settings.sheetId)" x-variant="{{settings.variant}}" ng-if="settings.sheetId">
 		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}" ng-if="settings.iconposition==='left'"></span>
 		{{settings.text}}
 		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}" ng-if="settings.iconposition==='right'"></span>

@@ -88,20 +88,32 @@
         "defaultValue": "",
         "options": [
           {
-            "label": "default",
+            "label": "White",
             "value": "default"
           },
           {
-            "label": "success",
+            "label": "Green",
             "value": "success"
           },
           {
-            "label": "warning",
+            "label": "Orange",
             "value": "warning"
           },
           {
-            "label": "error",
+            "label": "Red",
             "value": "error"
+          },
+          {
+            "label": "Blue",
+            "value": "blue"
+          },
+          {
+            "label": "Purple",
+            "value": "purple"
+          },
+          {
+            "label": "Brown",
+            "value": "brown"
           }
         ],
         "order": 4,
