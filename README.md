@@ -11,6 +11,7 @@ Parameters
 - Icon color
 - Arrow color
 - Icon selection (only the ones that are shipped with Sense)
+..* sheet <span class="lui-icon lui-icon--sheet"></span>
 
 ---
 
