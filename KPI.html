@@ -1,0 +1,164 @@
+<style>
+@color: {{settings.bgcolor}};
+@textColor: {{settings.textColor}};
+@iconColor: {{settings.iconColor}};
+@arrowColor: {{settings.arrowColor}};
+@iconArrowSize: {{settings.arrowSize}}rem;
+
+@baseSize: 16px;
+@labelSize: 1.8rem;
+@labelSizeMobile: 1rem;
+@valSize: 3rem;
+@valSizeMobile: 1.5rem;
+@headerSize: 1.7rem;
+@backLabelSize: 1rem;
+@iconSize: 7rem;
+@iconSizeMobile: 4rem;
+@smallIconSize: 2rem;
+@paddingRight: 20px;
+@layout: {{settings.layout}};
+
+.kpi-tile {
+	width:100%;
+	height:100%;
+	font-size:@baseSize;
+	overflow: hidden;
+	color: @textColor;
+	.transition-properties( font-size 0.3s linear;);
+	.container-content {
+		background-color:@color;
+		height: 100%;
+		width: 100%;
+		display: flex;
+  		align-items: center;
+		flex-direction: @layout;
+		.container-icon {
+			flex: 0 0 50px;
+			text-align: center;
+			padding-left:10px;
+			.lui-icon {
+				font-size: @iconSize;
+				opacity: 1;
+				color: white;
+				.transition-properties( display 0.2s;);
+			}
+		}
+		.text-container {
+			flex: 1 1;
+			.value-container {
+				right: @paddingRight;
+				text-align:right;
+				padding-right: @paddingRight;
+				.label {
+				  	font-size: @labelSize;
+				  	text-transform: uppercase;
+				  	opacity: 0.7;
+				  	font-weight: bold;
+				  	line-height: 1;
+				}
+				.value {
+				  	font-size: @valSize;
+				  	font-weight:bold;
+				  	transition-property: font-size;
+				  	transition-duration: 0.4s;
+				  	line-height: 1;
+					display: flex;
+					.value-text {
+						flex: 1 1 auto;
+						.arrow-icon {
+							text-align: right;
+							flex: 0 0 20px;
+							margin: auto;
+							.lui-icon {
+								font-size: @iconArrowSize;
+								opacity: 1;
+								color: @iconColor;
+								padding-left: 10px;
+								.transition-properties( display 0.2s;);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.kpi-tile[max-width~="400px"] {
+	.container-content {
+		display: flex;
+		flex-direction: column;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		justify-content: center;
+
+		.container-icon {
+    		-webkit-box-flex: 0;
+			flex: none;
+			max-width: 50%;
+			padding-left: 0;
+			.lui-icon {
+				font-size: @iconSizeMobile;
+				padding-bottom: 10px;
+			}
+		}
+		.text-container {
+    		-webkit-box-flex: 0;
+			flex: none;
+			max-width: 90%;
+
+			.value-container {
+				.label {
+				  	font-size: @labelSizeMobile;
+				}
+				.value {
+				  	font-size: @valSizeMobile;
+					.value-text {
+						//text-align: center;
+						.arrow-icon {
+							.lui-icon {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.kpi-tile[max-width~="300px"] {
+}
+
+.transition-properties(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+</style>
+<div><div class="kpi-tile" ng-click="navigation.gotoSheet(settings.sheetId)">
+  <div class="container-content">
+   	<div class="container-icon">
+		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}"></span>
+  	</div>
+  	<div class="text-container">
+		<div class="value-container">
+	  		<div class="label">
+				{{data.headers[0].qFallbackTitle ? data.headers[0].qFallbackTitle : "Measure"}}
+	  		</div>
+	  		<div class="value">
+	    		<div class="value-text">
+					{{data.rows[0].measures[0].qText ? data.rows[0].measures[0].qText : "Value"}}
+				</div>
+				<div class="arrow-icon" ng-if="settings.arrowIcon">
+					<span class="lui-icon lui-icon lui-icon--triangle-{{settings.arrowIcon}}"></span>
+				</div>
+	  		</div>
+		</div>
+	</div>
+	
+  </div>
+  
+</div></div>
