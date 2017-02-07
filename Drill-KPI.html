@@ -1,0 +1,135 @@
+<style>@color: {{settings.bgcolor}};
+@textColor: {{settings.textColor}};
+@iconColor: {{settings.iconColor}};
+@arrowColor: {{settings.arrowColor}};
+@iconArrowSize: {{settings.arrowSize}}rem;
+
+@baseSize: 16px;
+@labelSize: 1.8rem;
+@valSize: 3rem;
+@headerSize: 1.7rem;
+@backLabelSize: 1rem;
+@iconSize: 7rem;
+@smallIconSize: 2rem;
+@paddingRight: 20px;
+@layout: {{settings.layout}};
+
+lui-button,
+.kpi-tile {
+	width:100%;
+	height:100%;
+	font-size:@baseSize;
+	overflow: hidden;
+	color: @textColor;
+	//cursor: pointer;
+	
+	.transition-properties( font-size 0.3s linear;);
+	
+	.text-container {
+		flex: 1 1;
+	}
+	.value-container {
+		right: @paddingRight;
+		text-align:right;
+		padding-right: @paddingRight;
+	  	.label {
+		  	font-size: @labelSize;
+		  	text-transform: uppercase;
+		  	opacity: 0.7;
+		  	font-weight: bold;
+	  	}
+	  	.value {
+		  	font-size: @valSize;
+		  	font-weight:bold;
+		  	transition-property: font-size;
+		  	transition-duration: 0.4s;
+		  	line-height: 0.7;
+			display: flex;
+			.value-text {
+				flex: 1 1;
+			}
+			.arrow-icon {
+				text-align: right;
+				flex: 0 0 20px;
+				margin: auto;
+				span {
+					font-size: @iconArrowSize;
+					opacity: 1;
+					color: @iconColor;
+					padding-left: 10px;
+					.transition-properties( display 0.2s;);
+				}
+			}
+	  	}
+	}
+	
+	.container-content {
+		background-color:@color;
+		height: 100%;
+		width: 100%;
+		display: flex;
+  		align-items: center;
+		flex-direction: @layout;
+		
+	}
+	
+	.container-icon {
+		flex: 0 0 50px;
+		text-align: center;
+		padding-left:10px;
+		span {
+			font-size: @iconSize;
+			opacity: 1;
+			color: white;
+			.transition-properties( display 0.2s;);
+		}
+	}
+
+}
+
+.kpi-tile[max-width~="400px"] {
+		//flex-direction: column;
+		//align-content: center stretch;
+		//flex: 1 1;
+	//.text-container {
+	//	flex: 0 0;
+	//}
+	.container-content {
+		flex-direction: column;
+		padding: 50% 0;
+	}
+}
+
+.transition-properties(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+
+</style>
+<div><div class="kpi-tile" ng-click="navigation.gotoSheet(settings.sheetId)">
+  <div class="container-content">
+   	<div class="container-icon">
+		<span class="lui-icon lui-icon lui-icon--{{settings.icon}}"></span>
+  	</div>
+  	<div class="text-container">
+		<div class="value-container">
+	  		<div class="label">
+				{{data.headers[0].qFallbackTitle ? data.headers[0].qFallbackTitle : "Measure"}}
+	  		</div>
+	  		<div class="value">
+	    		<div class="value-text">
+					{{data.rows[0].measures[0].qText ? data.rows[0].measures[0].qText : "Value"}}
+				</div>
+				<div class="arrow-icon" ng-if="settings.arrowIcon">
+					<span class="lui-icon lui-icon lui-icon--triangle-{{settings.arrowIcon}}"></span>
+				</div>
+	  		</div>
+		</div>
+	</div>
+	
+  </div>
+  
+</div></div>

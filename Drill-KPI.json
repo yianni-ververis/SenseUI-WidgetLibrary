@@ -1,0 +1,683 @@
+{
+  "name": "Drill-KPI",
+  "description": "",
+  "author": "",
+  "library": "senseui-widgetlibrary",
+  "meta": {
+    "type": "kpi"
+  },
+  "properties": {
+    "sections": [
+      {
+        "type": "header",
+        "order": 1,
+        "parent": "qw-pe-dropzone0-1",
+        "ref": "header1",
+        "label": "Settings"
+      }
+    ],
+    "settings": [
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "combo-chart",
+        "options": [
+          {
+            "label": "sheet",
+            "value": "sheet"
+          },
+          {
+            "label": "object",
+            "value": "object"
+          },
+          {
+            "label": "image",
+            "value": "image"
+          },
+          {
+            "label": "clear-selections",
+            "value": "clear-selections"
+          },
+          {
+            "label": "selections-tool",
+            "value": "selections-tool"
+          },
+          {
+            "label": "Bookmark",
+            "value": "bookmark"
+          },
+          {
+            "label": "back",
+            "value": "back"
+          },
+          {
+            "label": "forward",
+            "value": "forward"
+          },
+          {
+            "label": "history",
+            "value": "history"
+          },
+          {
+            "label": "help",
+            "value": "help"
+          },
+          {
+            "label": "info",
+            "value": "info"
+          },
+          {
+            "label": "toggle-left",
+            "value": "toggle-left"
+          },
+          {
+            "label": "toggle-right",
+            "value": "toggle-right"
+          },
+          {
+            "label": "selections-reload",
+            "value": "selections-reload"
+          },
+          {
+            "label": "text",
+            "value": "text"
+          },
+          {
+            "label": "group",
+            "value": "group"
+          },
+          {
+            "label": "search",
+            "value": "search"
+          },
+          {
+            "label": "zoom-in",
+            "value": "zoom-in"
+          },
+          {
+            "label": "zoom-out",
+            "value": "zoom-out"
+          },
+          {
+            "label": "selections-back",
+            "value": "selections-back"
+          },
+          {
+            "label": "selections-forward",
+            "value": "selections-forward"
+          },
+          {
+            "label": "export",
+            "value": "export"
+          },
+          {
+            "label": "lock",
+            "value": "lock"
+          },
+          {
+            "label": "unlock",
+            "value": "unlock"
+          },
+          {
+            "label": "database",
+            "value": "database"
+          },
+          {
+            "label": "calendar",
+            "value": "calendar"
+          },
+          {
+            "label": "field",
+            "value": "field"
+          },
+          {
+            "label": "expression",
+            "value": "expression"
+          },
+          {
+            "label": "library",
+            "value": "library"
+          },
+          {
+            "label": "debug",
+            "value": "debug"
+          },
+          {
+            "label": "script-ok",
+            "value": "script-ok"
+          },
+          {
+            "label": "grid-large",
+            "value": "grid-large"
+          },
+          {
+            "label": "star",
+            "value": "star"
+          },
+          {
+            "label": "print",
+            "value": "print"
+          },
+          {
+            "label": "remove",
+            "value": "remove"
+          },
+          {
+            "label": "handle",
+            "value": "handle"
+          },
+          {
+            "label": "handle-horizontal",
+            "value": "handle-horizontal"
+          },
+          {
+            "label": "menu",
+            "value": "menu"
+          },
+          {
+            "label": "list",
+            "value": "list"
+          },
+          {
+            "label": "unordered-list",
+            "value": "unordered-list"
+          },
+          {
+            "label": "bar-chart",
+            "value": "bar-chart"
+          },
+          {
+            "label": "bar-chart-horizontal",
+            "value": "bar-chart-horizontal"
+          },
+          {
+            "label": "clock",
+            "value": "clock"
+          },
+          {
+            "label": "line-chart",
+            "value": "line-chart"
+          },
+          {
+            "label": "pie-chart",
+            "value": "pie-chart"
+          },
+          {
+            "label": "gauge-chart",
+            "value": "gauge-chart"
+          },
+          {
+            "label": "kpi",
+            "value": "kpi"
+          },
+          {
+            "label": "scatter-chart",
+            "value": "scatter-chart"
+          },
+          {
+            "label": "map",
+            "value": "map"
+          },
+          {
+            "label": "puzzle",
+            "value": "puzzle"
+          },
+          {
+            "label": "table",
+            "value": "table"
+          },
+          {
+            "label": "pivot-table",
+            "value": "pivot-table"
+          },
+          {
+            "label": "filterpane",
+            "value": "filterpane"
+          },
+          {
+            "label": "treemap",
+            "value": "treemap"
+          },
+          {
+            "label": "combo-chart",
+            "value": "combo-chart"
+          },
+          {
+            "label": "plus",
+            "value": "plus"
+          },
+          {
+            "label": "minus",
+            "value": "minus"
+          },
+          {
+            "label": "triangle-top",
+            "value": "triangle-top"
+          },
+          {
+            "label": "triangle-bottom",
+            "value": "triangle-bottom"
+          },
+          {
+            "label": "triangle-left",
+            "value": "triangle-left"
+          },
+          {
+            "label": "triangle-right",
+            "value": "triangle-right"
+          },
+          {
+            "label": "run-script",
+            "value": "run-script"
+          },
+          {
+            "label": "tick",
+            "value": "tick"
+          },
+          {
+            "label": "cogwheel",
+            "value": "cogwheel"
+          },
+          {
+            "label": "settings",
+            "value": "settings"
+          },
+          {
+            "label": "data-model",
+            "value": "data-model"
+          },
+          {
+            "label": "script",
+            "value": "script"
+          },
+          {
+            "label": "sense",
+            "value": "sense"
+          },
+          {
+            "label": "cut",
+            "value": "cut"
+          },
+          {
+            "label": "copy",
+            "value": "copy"
+          },
+          {
+            "label": "paste",
+            "value": "paste"
+          },
+          {
+            "label": "align-left",
+            "value": "align-left"
+          },
+          {
+            "label": "align-center",
+            "value": "align-center"
+          },
+          {
+            "label": "align-right",
+            "value": "align-right"
+          },
+          {
+            "label": "bold",
+            "value": "bold"
+          },
+          {
+            "label": "italic",
+            "value": "italic"
+          },
+          {
+            "label": "underline",
+            "value": "underline"
+          },
+          {
+            "label": "select-alternative",
+            "value": "select-alternative"
+          },
+          {
+            "label": "select-possible",
+            "value": "select-possible"
+          },
+          {
+            "label": "select-excluded",
+            "value": "select-excluded"
+          },
+          {
+            "label": "select-all",
+            "value": "select-all"
+          },
+          {
+            "label": "camera",
+            "value": "camera"
+          },
+          {
+            "label": "slide-show",
+            "value": "slide-show"
+          },
+          {
+            "label": "palette",
+            "value": "palette"
+          },
+          {
+            "label": "shapes",
+            "value": "shapes"
+          },
+          {
+            "label": "effects",
+            "value": "effects"
+          },
+          {
+            "label": "file",
+            "value": "file"
+          },
+          {
+            "label": "expand",
+            "value": "expand"
+          },
+          {
+            "label": "collapse",
+            "value": "collapse"
+          },
+          {
+            "label": "bin",
+            "value": "bin"
+          },
+          {
+            "label": "link",
+            "value": "link"
+          },
+          {
+            "label": "pivot",
+            "value": "pivot"
+          },
+          {
+            "label": "reload",
+            "value": "reload"
+          },
+          {
+            "label": "add",
+            "value": "add"
+          },
+          {
+            "label": "edit",
+            "value": "edit"
+          },
+          {
+            "label": "lasso",
+            "value": "lasso"
+          },
+          {
+            "label": "key",
+            "value": "key"
+          },
+          {
+            "label": "box",
+            "value": "box"
+          },
+          {
+            "label": "home",
+            "value": "home"
+          },
+          {
+            "label": "person",
+            "value": "person"
+          },
+          {
+            "label": "stream",
+            "value": "stream"
+          },
+          {
+            "label": "next",
+            "value": "next"
+          },
+          {
+            "label": "grid",
+            "value": "grid"
+          },
+          {
+            "label": "cloud",
+            "value": "cloud"
+          },
+          {
+            "label": "more",
+            "value": "more"
+          },
+          {
+            "label": "import",
+            "value": "import"
+          },
+          {
+            "label": "folder",
+            "value": "folder"
+          },
+          {
+            "label": "auto-layout",
+            "value": "auto-layout"
+          },
+          {
+            "label": "toggle-bottom",
+            "value": "toggle-bottom"
+          },
+          {
+            "label": "drop",
+            "value": "drop"
+          },
+          {
+            "label": "play",
+            "value": "play"
+          },
+          {
+            "label": "tag",
+            "value": "tag"
+          },
+          {
+            "label": "close",
+            "value": "close"
+          },
+          {
+            "label": "direct-discovery",
+            "value": "direct-discovery"
+          },
+          {
+            "label": "warning",
+            "value": "warning"
+          },
+          {
+            "label": "warning-triangle",
+            "value": "warning-triangle"
+          },
+          {
+            "label": "share",
+            "value": "share"
+          },
+          {
+            "label": "top",
+            "value": "top"
+          },
+          {
+            "label": "low-resolution",
+            "value": "low-resolution"
+          },
+          {
+            "label": "high-resolution",
+            "value": "high-resolution"
+          },
+          {
+            "label": "view",
+            "value": "view"
+          },
+          {
+            "label": "control",
+            "value": "control"
+          },
+          {
+            "label": "code",
+            "value": "code"
+          },
+          {
+            "label": "upload",
+            "value": "upload"
+          },
+          {
+            "label": "repair",
+            "value": "repair"
+          },
+          {
+            "label": "split",
+            "value": "split"
+          },
+          {
+            "label": "up-down",
+            "value": "up-down"
+          },
+          {
+            "label": "disconnect",
+            "value": "disconnect"
+          },
+          {
+            "label": "photo-library",
+            "value": "photo-library"
+          },
+          {
+            "label": "import",
+            "value": "import"
+          },
+          {
+            "label": "application",
+            "value": "application"
+          },
+          {
+            "label": "new-tab",
+            "value": "new-tab"
+          },
+          {
+            "label": "ascending",
+            "value": "ascending"
+          },
+          {
+            "label": "descending",
+            "value": "descending"
+          },
+          {
+            "label": "arrow-up",
+            "value": "arrow-up"
+          },
+          {
+            "label": "arrow-down",
+            "value": "arrow-down"
+          },
+          {
+            "label": "arrow-right",
+            "value": "arrow-right"
+          },
+          {
+            "label": "arrow-left",
+            "value": "arrow-left"
+          },
+          {
+            "label": "sync",
+            "value": "sync"
+          },
+          {
+            "label": "draggable",
+            "value": "draggable"
+          }
+        ],
+        "order": 4,
+        "parent": "header1",
+        "ref": "icon",
+        "label": "Icon"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "top",
+        "order": 5,
+        "parent": "header1",
+        "ref": "arrowIcon",
+        "label": "Arrow Icon (top/bottom)"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#3498db",
+        "order": 1,
+        "parent": "header1",
+        "ref": "bgcolor",
+        "label": "Backgound Color"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "row",
+        "options": [
+          {
+            "label": "Horizontal",
+            "value": "row"
+          },
+          {
+            "label": "Vertical",
+            "value": "column"
+          }
+        ],
+        "order": 0,
+        "parent": "header1",
+        "ref": "layout",
+        "label": "Layout"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#FFFFFF",
+        "order": 2,
+        "parent": "header1",
+        "ref": "textColor",
+        "label": "Text Color"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#FFFFFF",
+        "order": 3,
+        "parent": "header1",
+        "ref": "iconColor",
+        "label": "Icon Color"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#FFFFFF",
+        "order": 6,
+        "parent": "header1",
+        "ref": "arrowColor",
+        "label": "Arrow Color"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "3",
+        "order": 7,
+        "parent": "header1",
+        "ref": "arrowSize",
+        "label": "Arrow Size"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "",
+        "order": 8,
+        "parent": "header1",
+        "ref": "sheetId",
+        "label": "Sheet ID"
+      }
+    ],
+    "measures": {
+      "min": 0,
+      "max": 3
+    },
+    "dimensions": {
+      "max": 0,
+      "min": 0
+    }
+  }
+}
